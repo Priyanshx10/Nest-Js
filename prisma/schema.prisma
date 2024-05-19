@@ -12,3 +12,30 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+//to create models in Prisma we need to type the key word model.
+//Models represent the entities of your application domain. They are defined using model blocks in the data model.
+model User{
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  //email and hash is not an Optional String.
+  email String
+  hash String
+
+  //FirstName is an Optional String.
+  firstName String?
+  //LastName is an Optional String.
+  lastName String?
+}
+
+model Bookmark {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  title String
+  description String?
+  link String
+}

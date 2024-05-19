@@ -110,6 +110,10 @@ the docker configuration is in docker-compose.yml
 to launch our database we go to terminal and run "docker compose up dev-db -d"
 to stop our database we go to terminal and run "docker compose down dev-db "
 
+For Prisma SetUp
+"npm add -D prisma"
+"npm add -D @prisma/client"
+"npx prisma init"
 
 THE TECH STACK
 Here's a breakdown of each tools and technology :
