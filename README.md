@@ -83,3 +83,23 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 Nest is [MIT licensed](LICENSE).
 
 
+Here are several ways to check if Docker is installed and running on your system:
+
+1. Using the docker ps command:
+
+This is the most common way to check if Docker is running and list any containers that are currently running, stopped, or exited.
+
+Bash
+"docker ps"
+
+If Docker is not running, you'll see an error message like "Cannot connect to the Docker daemon. Is the docker daemon running?"
+If Docker is running but there are no containers, the output will be empty.
+If containers are running, you'll see information about them, including container ID, image name, status, ports, and names (if assigned).
+2. Using the docker info command:
+
+This command provides more detailed information about the Docker daemon, including its configuration, system resources, connected networks, and more.
+
+Bash
+"docker info"
+
+This output can be helpful for troubleshooting any issues you might be facing with Docker.
