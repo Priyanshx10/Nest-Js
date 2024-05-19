@@ -103,3 +103,23 @@ Bash
 "docker info"
 
 This output can be helpful for troubleshooting any issues you might be facing with Docker.
+
+Prefer to use Docker compose will automatically allow me span the docker container and destroy them.So its very handy.
+the docker configuration is in docker-compose.yml
+
+to launch our database we go to terminal and run "docker compose up dev-db -d"
+to stop our database we go to terminal and run "docker compose down dev-db "
+
+
+THE TECH STACK
+Here's a breakdown of each tools and technology :
+
+Prisma : Acts like a bridge between your application and your database. It lets you write simple queries (like fetching or updating data) without needing raw SQL.
+
+Docker : Packages your application and its dependencies into self-contained units called containers. These containers run consistently across different environments.
+
+Postman: A tool for testing APIs (like web services). You can send requests (like GET or POST) and see the responses, making it easy to interact with and debug APIs.
+
+NestJS: A framework for building server-side applications in JavaScript (using TypeScript). NestJS provides structure and tools for building well-organized applications.
+
+TypeScript : An extension of JavaScript that adds optional static typing. This helps catch errors early in development, making your code more reliable and easier to maintain.

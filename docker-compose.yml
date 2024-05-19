@@ -1,0 +1,16 @@
+version: '26.1'  # Specify the Docker Compose version
+
+services:
+  dev-db:  # Service name should be indented
+    image: postgres:13  # Use correct image name and tag
+    ports:
+      - "5434:5432"  # Map host port 5434 to container port 5432
+    environment:
+      POSTGRE_USER: postgres  # Environment variables indented
+      POSTGRE_PASSWORD: "123"  # Use quotes for passwords
+      POSTGRE_DB: nest  # Environment variables indented
+    networks:  # Networks section indented
+      - freecodecamp  # Network name indented
+
+networks:
+  freecodecamp:  # Network definition indented
