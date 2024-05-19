@@ -114,6 +114,7 @@ For Prisma SetUp
 "npm add -D prisma"
 "npm add -D @prisma/client"
 "npx prisma init"
+"npx prisma migrate dev"
 
 THE TECH STACK
 Here's a breakdown of each tools and technology :

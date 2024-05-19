@@ -15,6 +15,7 @@ datasource db {
 
 //to create models in Prisma we need to type the key word model.
 //Models represent the entities of your application domain. They are defined using model blocks in the data model.
+//Models act as blueprints for your data, specifying the types of data you'll store in your database.
 model User{
   id Int @id @default(autoincrement())
   createdAt DateTime @default(now())
